@@ -8,7 +8,7 @@ const Nav = ({ username }) => {
 
         <nav className="navbar navbar-expand-lg navbar-dark bg-dark" aria-label="Fifth navbar example">
             <div className="container-fluid">
-                <a className="navbar-brand" href="/">Like me!</a>
+                <a className="navbar-brand" href="/reacthooks">Like me!</a>
 
                 {
                     <p className="float-end text-white pt-2 pe-4">{username}</p>
