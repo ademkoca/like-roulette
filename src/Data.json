@@ -2,23 +2,23 @@
   {
     "id": "1",
     "title": "Look at my gramaphone",
-    "body": "ademkoca",
+    "body": "backy_gibson",
     "image": "img/posts/1.jpg",
-    "totalLikes": ["regiina.falange", "dembe", "reddington"]
+    "totalLikes": ["peytonwatts", "leslie_barnes_1", "kirk_dunn"]
   },
   {
     "id": "2",
-    "title": "Here comes the Santa maca",
-    "body": "regiina.falange",
+    "title": "Here comes the girl...",
+    "body": "leslie_barnes_1",
     "image": "img/posts/2.jpg",
     "totalLikes": [
-      "ademkoca",
-      "aram",
-      "elizabeth",
-      "dembe",
+      "ethelchavez99",
+      "backy_gibson",
+      "alicia_may",
+      "alfredo.watkins",
       "karen",
-      "ressler",
-      "reddington"
+      "kirk_dunn",
+      "peytonwatts"
     ]
   }
 ]

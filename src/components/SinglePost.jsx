@@ -24,7 +24,9 @@ const SinglePost = (props) => {
             className={`bi bi-heart${liked ? "-fill" : ""}`}
             liked={false}
             onClick={() =>
-              !liked ? setLiked(true) : alert("Prc! Nema da anlajkuješ")
+              !liked
+                ? setLiked(true)
+                : alert("You can't unlike the posts once you liked them!")
             }
           ></i>
           {liked && (

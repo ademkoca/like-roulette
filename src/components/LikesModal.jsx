@@ -10,7 +10,7 @@ const LikesModal = (props) => {
   var avatar = [];
   for (let i = 0; i < props.data.length; i++) {
     avatar.push(Users.find((user) => user.username === props.data[i]).avatar);
-    console.log(avatar);
+    // console.log(avatar);
   }
   var likelist = [];
   for (let i = 0; i < props.data.length; i++) {
