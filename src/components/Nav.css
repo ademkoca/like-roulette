@@ -3,3 +3,23 @@
   top: 0;
   z-index: 9999;
 }
+
+.loggedUserInfo {
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  justify-content: space-around;
+  margin-right: 30px;
+}
+
+.profileImg {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+@media screen and (max-width: 600px) {
+  .loggedUserInfo {
+    margin-right: 0;
+  }
+}

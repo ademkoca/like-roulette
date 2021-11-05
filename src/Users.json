@@ -1,42 +1,47 @@
 [
   {
+    "userId": "0",
+    "username": "jayden_may",
+    "avatar": "img/users/jayden_may.jpg"
+  },
+  {
     "userId": "9",
     "username": "alfredo.watkins",
-    "avatar": "/img/users/alfredo.watkins.jpg"
+    "avatar": "img/users/alfredo.watkins.jpg"
   },
   {
     "userId": "2",
     "username": "backy_gibson",
-    "avatar": "/img/users/backy_gibson.jpg"
+    "avatar": "img/users/backy_gibson.jpg"
   },
   {
     "userId": "3",
     "username": "alicia_may",
-    "avatar": "/img/users/alicia_may.jpg"
+    "avatar": "img/users/alicia_may.jpg"
   },
   {
     "userId": "4",
     "username": "kirk_dunn",
-    "avatar": "/img/users/kirk_dunn.jpg"
+    "avatar": "img/users/kirk_dunn.jpg"
   },
   {
     "userId": "5",
     "username": "ethelchavez99",
-    "avatar": "/img/users/ethelchavez99.jpg"
+    "avatar": "img/users/ethelchavez99.jpg"
   },
   {
     "userId": "6",
     "username": "leslie_barnes_1",
-    "avatar": "/img/users/leslie_barnes_1.jpg"
+    "avatar": "img/users/leslie_barnes_1.jpg"
   },
   {
     "userId": "7",
     "username": "peytonwatts",
-    "avatar": "/img/users/peytonwatts.jpg"
+    "avatar": "img/users/peytonwatts.jpg"
   },
   {
     "userId": "8",
     "username": "karen",
-    "avatar": "/img/users/karen.jpg"
+    "avatar": "img/users/karen.jpg"
   }
 ]

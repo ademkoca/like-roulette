@@ -7,7 +7,7 @@ import Home from './components/Home';
 function App() {
 
   const [authenticated, setAuthenticated] = useState(true);
-  const username = "Adem Koca";
+  const username = "jayden_may";
   return (
     <>
       <Nav username={authenticated ? "Hello, " + username : "Hello, stranger"} />

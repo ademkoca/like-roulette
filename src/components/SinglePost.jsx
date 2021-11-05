@@ -3,11 +3,19 @@ import React from "react";
 import { useState } from "react";
 import "./SinglePost.css";
 import Posts from "../Data.json";
+import Users from "../Users.json";
 import LikesModal from "./LikesModal";
 
 const SinglePost = (props) => {
   const [liked, setLiked] = useState(false);
   const likers = Posts.find((post) => post.image === props.image).totalLikes;
+  const me = Users.find((user) => user.userId === "0");
+  const likerImages = [
+    Users.find((user) => user.username === likers[0]).avatar,
+    Users.find((user) => user.username === likers[1]).avatar,
+  ];
+  // console.log(likerImages);
+
   // console.log(likers);
   const [modalShow, setModalShow] = useState(false);
 
@@ -16,35 +24,64 @@ const SinglePost = (props) => {
       <div
         className="card mx-auto my-2"
         key={props.id}
-        style={{ width: "18rem" }}
+        style={{ width: "20rem" }}
       >
         <img src={props.image} className="card-img-top" alt={props.title} />
-        <div className="card-body">
+        <div className={`card-body ${liked ? "expand" : ""}`}>
           <i
             className={`bi bi-heart${liked ? "-fill" : ""}`}
-            liked={false}
             onClick={() =>
               !liked
                 ? setLiked(true)
                 : alert("You can't unlike the posts once you liked them!")
             }
           ></i>
+          {!liked && (
+            <span className="textLikeThis">
+              Like to see how many people liked this post
+            </span>
+          )}
           {liked && (
             <>
               <h5 className="card-title">{props.title}</h5>
               <p className="card-text">by: {props.body}</p>
-              <span className="text-muted">
-                You and{" "}
-                <span className="link" onClick={() => setModalShow(true)}>
-                  {props.totalLikes.length} others
-                </span>{" "}
-                like this
+              <div className="text-muted">
+                <div className="likeImgContainer">
+                  <img className="likeImg one" src={me.avatar} alt="" />
+
+                  {likerImages[0] && (
+                    <img
+                      className="likeImg two"
+                      src={
+                        Users.find((user) => user.username === likers[0]).avatar
+                      }
+                      alt=""
+                    />
+                  )}
+                  {likerImages[1] && (
+                    <img
+                      className="likeImg three"
+                      src={
+                        Users.find((user) => user.username === likers[1]).avatar
+                      }
+                      alt=""
+                    />
+                  )}
+                </div>{" "}
+                <div className="likesCounter">
+                  You and{" "}
+                  <span className="link" onClick={() => setModalShow(true)}>
+                    {props.totalLikes.length} others
+                  </span>{" "}
+                  like this
+                </div>
                 <LikesModal
                   data={likers}
+                  me={me}
                   show={modalShow}
                   onHide={() => setModalShow(false)}
                 />
-              </span>
+              </div>
             </>
           )}
         </div>

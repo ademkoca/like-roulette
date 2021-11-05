@@ -12,7 +12,14 @@ const LikesModal = (props) => {
     avatar.push(Users.find((user) => user.username === props.data[i]).avatar);
     // console.log(avatar);
   }
-  var likelist = [];
+  const me = (
+    <p className="likesRow">
+      <img className="profileLikesImg" src={props.me.avatar} alt="" />
+      <span className="profileLikes">{props.me.username}</span>
+    </p>
+  );
+
+  var likelist = [me];
   for (let i = 0; i < props.data.length; i++) {
     likelist.push(
       <p className="likesRow">
@@ -24,6 +31,7 @@ const LikesModal = (props) => {
       </p>
     );
   }
+  // console.log(likelist);
   // console.log(avatar);
 
   const [show, setShow] = useState(false);
@@ -38,6 +46,7 @@ const LikesModal = (props) => {
       aria-labelledby="contained-modal-title-vcenter"
       centered
       scrollable={true}
+      key={props.me.id}
     >
       <Modal.Header closeButton>
         <Modal.Title id="contained-modal-title-vcenter">Likes</Modal.Title>
