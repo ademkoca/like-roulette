@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/like-roulette/static/css/main.c0f5ba45.chunk.css",
-    "main.js": "/like-roulette/static/js/main.98e26976.chunk.js",
-    "main.js.map": "/like-roulette/static/js/main.98e26976.chunk.js.map",
+    "main.css": "/like-roulette/static/css/main.bcd948aa.chunk.css",
+    "main.js": "/like-roulette/static/js/main.a6530c49.chunk.js",
+    "main.js.map": "/like-roulette/static/js/main.a6530c49.chunk.js.map",
     "runtime-main.js": "/like-roulette/static/js/runtime-main.7ac08d69.js",
     "runtime-main.js.map": "/like-roulette/static/js/runtime-main.7ac08d69.js.map",
     "static/js/2.57c8fbf1.chunk.js": "/like-roulette/static/js/2.57c8fbf1.chunk.js",
     "static/js/2.57c8fbf1.chunk.js.map": "/like-roulette/static/js/2.57c8fbf1.chunk.js.map",
     "index.html": "/like-roulette/index.html",
-    "static/css/main.c0f5ba45.chunk.css.map": "/like-roulette/static/css/main.c0f5ba45.chunk.css.map",
+    "static/css/main.bcd948aa.chunk.css.map": "/like-roulette/static/css/main.bcd948aa.chunk.css.map",
     "static/js/2.57c8fbf1.chunk.js.LICENSE.txt": "/like-roulette/static/js/2.57c8fbf1.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.7ac08d69.js",
     "static/js/2.57c8fbf1.chunk.js",
-    "static/css/main.c0f5ba45.chunk.css",
-    "static/js/main.98e26976.chunk.js"
+    "static/css/main.bcd948aa.chunk.css",
+    "static/js/main.a6530c49.chunk.js"
   ]
 }
