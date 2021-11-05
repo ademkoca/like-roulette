@@ -10,7 +10,7 @@ function App() {
   const username = "jayden_may";
   return (
     <>
-      <Nav username={authenticated ? "Hello, " + username : "Hello, stranger"} />
+      <Nav username={authenticated ? username : "Hello, stranger"} />
       <Home username={username} />
     </>
 

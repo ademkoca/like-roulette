@@ -31,6 +31,7 @@
   height: 20px;
   position: absolute;
   border-radius: 50%;
+  border: 0.5px solid #ccc;
 }
 .one {
   z-index: 100;
@@ -52,4 +53,6 @@
 .textLikeThis {
   font-size: 12px;
   margin-left: 10px;
+  position: absolute;
+  bottom: 20px;
 }
