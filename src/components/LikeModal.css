@@ -9,6 +9,12 @@
   align-items: center;
 }
 
+.modalRight {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .profileLikesImg {
   max-width: 40px;
   height: 40px;
@@ -24,6 +30,7 @@
 
 .modal-body {
   overflow-y: scroll !important;
+  padding-right: 0;
 }
 
 .modal-body::-webkit-scrollbar {

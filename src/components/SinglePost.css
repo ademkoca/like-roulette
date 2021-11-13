@@ -1,7 +1,4 @@
-.link {
-  color: rgb(98, 98, 255);
-  cursor: pointer;
-}
+
 
 .card img {
   max-width: 100%;
@@ -18,41 +15,5 @@
   margin-top: 1.5rem;
 }
 
-.expand {
-  min-height: 170px;
-}
 
-.likeImgContainer {
-  position: relative;
-}
 
-.likeImg {
-  width: 20px;
-  height: 20px;
-  position: absolute;
-  border-radius: 50%;
-  border: 0.5px solid #ccc;
-}
-.one {
-  z-index: 100;
-}
-.two {
-  left: 10px;
-  z-index: 5;
-}
-.three {
-  left: 20px;
-  z-index: 1;
-}
-
-.likesCounter {
-  position: absolute;
-  left: 65px;
-  bottom: 12px;
-}
-.textLikeThis {
-  font-size: 12px;
-  margin-left: 10px;
-  position: absolute;
-  bottom: 20px;
-}

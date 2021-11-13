@@ -21,6 +21,7 @@ const Home = (username) => {
     // console.log('Post data:' + post);
     // console.log('Post data:' + jsonData);
   };
+  // console.log(typeof jsonData);
   // setPost(postData);
   // console.log(jsonData);
   return (
@@ -32,6 +33,7 @@ const Home = (username) => {
             item //replace "jsonData" with "post" to get data from jsonplaceholder API
           ) => (
             <SinglePost
+              id={item.id}
               key={item.id}
               title={item.title}
               body={item.body}

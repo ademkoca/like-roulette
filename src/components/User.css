@@ -1,0 +1,28 @@
+.userProfile {
+  min-height: 76vh;
+}
+
+.ProfileTitle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+
+.ProfileTitle h1 {
+  font-size: 25px;
+}
+
+.ProfileImg {
+  width: 100px;
+  border-radius: 50%;
+  border: 1px solid #c1c1c1;
+  margin-bottom: 20px;
+}
+
+@media screen and (max-width: 450px) {
+  .ProfileTitle h1 {
+    font-size: 20px;
+  }
+}

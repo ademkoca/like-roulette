@@ -5,11 +5,13 @@ import "./SinglePost.css";
 import Posts from "../Data.json";
 import Users from "../Users.json";
 import LikesModal from "./LikesModal";
+import { Link, BrowserRouter as Router } from "react-router-dom";
 
 const SinglePost = (props) => {
   const [liked, setLiked] = useState(false);
   const likers = Posts.find((post) => post.image === props.image).totalLikes;
   const me = Users.find((user) => user.userId === "0");
+  console.log(me);
   const likerImages = [
     Users.find((user) => user.username === likers[0]).avatar,
     Users.find((user) => user.username === likers[1]).avatar,
@@ -44,26 +46,25 @@ const SinglePost = (props) => {
           {liked && (
             <>
               <h5 className="card-title">{props.title}</h5>
-              <p className="card-text">by: {props.body}</p>
+              <p className="card-text">
+                by:{" "}
+                <Router>
+                  <a className="link" href={`/user/${props.body}/`}>
+                    {props.body}
+                  </a>
+                </Router>
+              </p>
               <div className="text-muted">
                 <div className="likeImgContainer">
                   <img className="likeImg one" src={me.avatar} alt="" />
 
                   {likerImages[0] && (
-                    <img
-                      className="likeImg two"
-                      src={
-                        Users.find((user) => user.username === likers[0]).avatar
-                      }
-                      alt=""
-                    />
+                    <img className="likeImg two" src={likerImages[0]} alt="" />
                   )}
                   {likerImages[1] && (
                     <img
                       className="likeImg three"
-                      src={
-                        Users.find((user) => user.username === likers[1]).avatar
-                      }
+                      src={likerImages[1]}
                       alt=""
                     />
                   )}

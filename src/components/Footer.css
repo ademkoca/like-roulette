@@ -1,0 +1,21 @@
+footer {
+    background-color: var(--background);
+    text-align: center;
+    max-width: 100% !important;
+    color: var(--text);
+   }
+   footer a {
+       text-decoration: none;
+       /* margin-right: 10px; */
+       width: 100%;
+       color: var(--text);
+   }
+   
+   footer span {
+       margin: 0 4px;
+       color: var(--text);
+   }
+   footer strong {
+       margin-right: 5px;
+       color: var(--text);
+   }
